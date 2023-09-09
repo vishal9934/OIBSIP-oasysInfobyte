@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container {
+    background-color: rgb(180, 228, 22);
+    width: 510px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    box-shadow: 20px 20px 20px rgb(27, 45, 19);
+}
+.container h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.value_input label{
+    font-size: 20px;
+    gap: 5px;
+
+}
+.Choose {
+    display: flex;
+    gap: 10px;
+}
+.Choose div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+#result{
+    background-color: #fff;
+}
+#result,
+#inputValue {
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid rgb(5, 5, 5);
+    outline: 2px;
+    padding: 0 10px;
+    font-weight: 600;
+    border-radius: 4px;
+    
+}
+#inputValue:focus {
+    height: 40px;
+    font-size: 20px;
+    background-color:  rgb(217, 233, 230);
+    outline: 2px;
+    padding: 0 10px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+#button {
+    padding: 14px 40px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(229, 112, 126);
+    color: rgb(14, 13, 13);
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 180px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    
+}
+#button:active {
+    padding: 14px 40px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(109, 194, 78);
+    color: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 180px;
+    padding-bottom: 40px;
+}
+
+.results {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#result{
+     width: 410px;
+     padding-left: 160px;
+     padding-top: 5px;
+}
+#type1,
+#type2 {
+    height: 40px;
+    width: 198px;
+    font-size: 20px;
+    border: 2px solid rgb(12, 12, 12);
+    outline: 2px;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+#type1:focus,
+#type2:focus {
+    height: 40px;
+    width: 198px;
+    font-size: 20px;
+    border: 2px solid rgb(5, 5, 5);
+    border-radius: 4px;
+    outline: 2px;
+    padding: 0 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+label {
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(34, 11, 210);
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        transform: scale(0.95);
+    }
+    #button{
+        margin: auto;
+        margin-left: 130px;
+        padding: 10px 14px;
+        margin-top: 15px;
+    }
+    .value_input label{
+        font-size: 15px;
+    }
+    .value_input input{
+        width: 155px;
+    }
+    .container h1{
+        font-size: 30px;
+    }
+   #type1,#type2{
+    font-size: 15px;
+    width: 120px;
+   }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        
+        transform: scale(0.9);
+    }
+}
+@media only screen and (max-width: 340px) {
+    .container {
+        transform: scale(0.8);
+    }
+}

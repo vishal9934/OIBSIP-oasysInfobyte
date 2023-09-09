@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temperature Converter</title>
+        <link rel="stylesheet" href="temp.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@600;900&family=Tektur:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Temperature Converter</h1>
+            <div class="value_input">
+                <div style="display: flex;
+                flex-direction: row;">
+                <label for="degree">Enter the Integer value:</label>
+                <input type="number" name="degree" id="inputValue"  required>
+            </div>
+            <div class="Choose">
+                <div>
+                    <label for="type">From:</label>
+                    <select name="type" id="type1">
+                        <option value="celcius"><b>Celcius</b></option>
+                        <option value="fahrenheit"><b>Fahrenheit</b></option>
+                       
+                    </select>
+                </div>
+                <div>
+                    <label for="type">To:</label>
+                    <select name="type" id="type2">
+                        <option value="fahrenheit"><b>Fahrenheit</b></option>
+                        <option value="celcius"><b>Celcius</b></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button type="submit" id="button" onclick="temperature()">Convert</button>
+        </div>
+        <div class="results">
+            <label for="result">Result:</label>
+            <div id="result">
+                
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
